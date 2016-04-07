@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>麦索美思 Mcmas-网络创意全案 移动端微信设计开发，网站建设 O2O电商 社会化媒体营销 </title>
+<meta name="description" content="麦索美思 Mcmas">
+<meta name="keywords" content="麦索美思 Mcmas">
+<link rel="shortcut icon" href="logo.ico" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+
+
+<body>
+<!--#include file="header.shtml"-->
+<div id="banner">
+	<ul class="wrapper">
+		<li>
+		  <div align="left"><img src="images/banner1.jpg" width="1105" height="569"></div>
+		</li>
+	</ul>
+</div>
+<div id="content" class="wrapper">
+	<div class="title1">
+	  <br>
+    
+      </p>
+	  <p>&nbsp;</p>
+	  <p><img src="images/service.jpg" width="142" height="97"></p>
+	</div>
+	<div id="service">
+		<ul>
+			<a href="case2.shtml"><li class="ico1">
+				<b>社会化创意策略</b>
+			  
+				<p>品牌策略定位<br>
+				网络活动策划<br>
+				线上线下整合</p>
+		  </li></a>
+			<li class="line"></li>
+			<a href="app.shtml"><li class="ico2">
+				<b>移动端设计开发</b>
+				<p>微信活动设计<br>
+				微信游戏开发<br>
+				轻APP界面应用开发</p>
+			</li></a>
+			<li class="line"></li>
+			<a href="#"><li class="ico3">
+				<b>微电影拍摄</b>
+				<p>社会化营销 EPR<br>
+				事件营销策划<br>
+				病毒广告传播</p>
+			</li></a>
+			<li class="line"></li>
+			<a href="case.shtml"><li class="ico4">
+				<b>双微运营</b>
+				<p>微信公众号搭建<br>
+				微信微博日常运营<br>
+				数据监测分析</p>
+			</li></a>
+			
+		</ul>
+	</div>
+	<div class="title1"><img src="images/case.jpg" width="142" height="97"></div>
+	<div id="case">
+		<ul>
+			<a href="case.shtml"><li>
+				<div class="case_tp"><img src="images/tmp1.jpg">
+                </div>
+                <div class="case_fa"><img src="images/case_fd.png"></div>
+				<b>AOC 69</b>
+				<p>AOC 推出3D无边框游戏显示器</p>
+		  </li></a>
+			<a href="case.shtml"><li>
+				<div class="case_tp"><img src="images/tmp2.jpg"></div>
+                 <div class="case_fa"><img src="images/case_fd.png"></div>
+				<b>BALIE DIY</b>
+				<p>百利甜酒WEB GAME DIY搭配游戏</p>
+			</li></a>
+			<a href="case.shtml"><li>
+				<div class="case_tp"><img src="images/tmp3.jpg"></div>
+                 <div class="case_fa"><img src="images/case_fd.png"></div>
+				<b>安踏 水泥克星</b>
+				<p>安踏联合高校举报水泥克星比赛</p>
+			</li></a>
+			<a href="case.shtml"><li>
+				<div class="case_tp"><img src="images/tmp4.jpg"></div>
+                 <div class="case_fa"><img src="images/case_fd.png"></div>
+				<b>棒约翰 表情匯</b>
+				<p>棒约翰批萨WEB GAME DIY表情游戏</p>
+			</li></a>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+	<div class="title1"><img src="images/client1.jpg" width="142" height="97"></div>
+	<div id="client"></div>
+</div>
+<!--#include file="footer.shtml"-->
+</body>
+</html>

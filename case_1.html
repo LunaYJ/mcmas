@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>麦索美思 Mcmas</title>
+<meta name="description" content="麦索美思 Mcmas">
+<meta name="keywords" content="麦索美思 Mcmas">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script src="js/jquery-min-1.7.js"></script>
+<script src="js/nav.js"></script>
+</head>
+<body>
+<!--#include file="header.html"-->
+<div id="header">
+	<div class="wrapper">
+		<a href="index.html"><div class="logo"></div></a>
+		<a href="javascript:;" id="navIcon"></a>
+		<div class="nav">
+			<ul>
+				<li id="nav_index"><a href="index.html">首页<b>Home</b></a></li>
+				<li class="line"></li>
+				<li id="nav_service"><a href="service.html">服务<b>Service</b></a></li>
+				<li class="line"></li>
+				<li id="nav_case"><a href="case.html">案例<b>Case</b></a></li>
+				<li class="line"></li>
+				<li id="nav_wechat"><a href="wechat.html">产品<b>VIEM</b></a></li>
+				<li class="line"></li>
+				<li id="nav_about"><a href="about.html">关于<b>About</b></a></li>
+			</ul>
+		</div>
+		<div class="txt">
+			<ul>
+				<li class="email">info@mcmas.cn</li>
+				<li class="tel">021-51863063</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="content" class="wrapper">
+	<div class="title2"><img src="images/case1.jpg" width="216" height="128"><a href="javascript:;" id="caseNavIcon"></a></div>
+
+	<div class="tabs">
+		<ul class="clearfixed">
+			<li><a href="case.html">全部</a></li>
+			<li><a href="case.html">微信活动游戏</a></li>
+			<li><a href="#">社会化营销</a></li>
+			<li><a href="#">代运营</a></li>
+			<li><a href="app.html">APP</a></li>
+			<li><a href="case_2.html">网络活动广告</a></li>
+			<li class="cur"><a href="case_1.html">网站</a></li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+	<div id="caselist">
+		<ul>
+			<li><img src="images/case_1_1.jpg"></li>
+			<li><img src="images/case_1_2.jpg"></li>
+			<li><img src="images/case_1_3.jpg"></li>
+			<li><img src="images/case_1_4.jpg"></li>
+			<li><img src="images/case_1_5.jpg"></li>
+			<li><img src="images/case_1_6.jpg"></li>
+		</ul>
+	</div>
+</div>
+<!--#include file="footer.html"-->
+<div id="footer">
+	<div class="wrapper clearfixed">
+		<div class="fl w30 us">
+			<div class="tit tit1">业务咨询</div>
+			<div class="contact">
+				<a class="a1" href="tencent://message/?uin=342472&&Site=sc.admin5.com&&Menu=yes">QQ</a>
+				<a class="a2"><b><img src="images/qrcode.png"></b></a>
+				<a href="http://www.linkedin.com/company/%E9%BA%A6%E7%BE%8E%E7%B4%A2%E6%80%9D-mcmas" target="_blank" class="a3">IN</a>
+			</div>
+		</div>
+		<div class="fl w36 us">
+			<div class="tit tit2">在线提交需求</div>
+			<div class="form clearfixed" id="demand">
+				<div class="key">姓名：</div>
+				<div class="ipt"><input type="text" id="d_name" /></div>
+				<div class="key">联系电话：</div>
+				<div class="ipt"><input type="text" id="d_tel" /></div>
+				<div class="key">QQ：</div>
+				<div class="ipt"><input type="text" id="d_qq" /></div>
+				<div class="key">需求描述：</div>
+				<div class="ipt"><textarea id="d_content"></textarea></div>
+				<div class="key">&nbsp;</div>
+				<div class="ipt"><input type="button" id="submit" class="btns" value="提 交" /></div>
+			</div>
+		</div>
+		<div class="fl w30 us">
+			<div class="tit tit3">联系我们</div>
+			<div class="address">
+				地址：上海中山北路1715号浦发广场E座1607<br>
+				电话：021-61363025 51863063<br>
+				传真：021-63166078<br>
+				邮件：info@mcmas.cn<br>
+				地铁：3,4,7号线镇坪路2号出口500米<br>
+				驾车：中山北路靠近光新路
+			</div>
+		</div>
+	</div>
+	<div class="ft">
+		<div class="wrapper clearfixed">
+			<div class="txt">H5微信活动游戏开发  APP设计开发  社会化微信营销  病毒营销  网络推广  微信代运营 </div>
+			<div class="copy">Copyright &copy; 2014 mcmas.cn All Rights Reserved 沪ICP备12003485号</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$('#demand #submit').click(function(){
+			var d_name = $('#d_name').val();
+			var d_tel = $('#d_tel').val();
+			var d_qq = $('#d_qq').val();
+			var d_content = $('#d_content').val();
+			$.post('/index.php?g=Ext&m=Demand&a=submit',{
+				d_name : d_name,
+				d_tel : d_tel,
+				d_qq : d_qq,
+				d_content : d_content
+			},function(res){
+				if(res.code > 0){
+					alert(res.msg);
+					window.location.reload();
+				}else{
+					alert(res.msg);
+				}
+			},'json');
+		});
+	});
+	function currentNav(){
+		var url = window.location.pathname;
+		var file = url.replace(/(.*\/)*([^.]+).*/ig,"$2");
+		if(file == '/') file = 'index';
+		file = file.split('_')[0];
+		$('#nav_' + file).addClass('cur');
+	}
+	currentNav();
+</script>
+<div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253131951'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253131951' type='text/javascript'%3E%3C/script%3E"));</script></div>
+
+
+</body>
+</html>
